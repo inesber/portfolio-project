@@ -1,6 +1,27 @@
-h1 {
+:root {
+  --branding-color: #780116;
+  --secondary-color: #ddb892;
+  /*--heading-font-family:*/
+  /*--default-font-family:*/
+}
+
+body {
+  /*font-family: var(--default-font-family);*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-weight: bold;
+  /*font-family: var(--heading-font-family);*/
+}
+
+h1 {
+  font-size: 96px;
 }
 
 p {
@@ -8,6 +29,30 @@ p {
 }
 
 .hero {
-  background-image: url(/images/background.jpeg);
-  opacity: 0.5;
+  background-image: url(/images/background.png);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  /*color: */
+}
+
+.hero h2 {
+  /*font-family: var(--heading-font-family);*/
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
