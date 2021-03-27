@@ -1,0 +1,13 @@
+h1 {
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+}
+
+.hero {
+  background-image: url(/images/background.jpeg);
+  opacity: 0.5;
+}
