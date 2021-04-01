@@ -1,6 +1,6 @@
 :root {
   --branding-color: #780116;
-  --secondary-color: #ddb892;
+  --secondary-color: rgba(221, 184, 146, 0.3);
   --heading-font-family: "Yeseva One", cursive;
   --default-font-family: "Roboto", sans-serif;
 }
@@ -27,6 +27,10 @@ h1 {
 
 h2 {
   font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
 }
 
 p {
@@ -111,6 +115,10 @@ nav {
   padding: 20px 0;
 }
 
+nav h4 {
+  margin: 10px;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -132,6 +140,45 @@ nav a:hover,
 nav li.active a {
   color: var(--branding-color);
   transition: all 100ms ease-in-out;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -165,6 +212,15 @@ nav li.active a {
 
   nav a {
     font-size: 14px;
+  }
+
+  footer h3 {
+    font-size: 35px;
+  }
+
+  footer .btn {
+    width: 150px;
+    font-size: 16px;
   }
 }
 
